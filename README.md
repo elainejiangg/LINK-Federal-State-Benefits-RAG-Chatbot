@@ -20,6 +20,17 @@ cd interface/client && npm install && npm start
 cd interface/server && npm install && npm start
 ```
 
+# Files:
+- interface
+    - client: Frontend
+    - server: Backend
+- parser
+    - parse.py: Convert unstructured data from database.txt to structured databaseSummary.json using OpenAI ChatCompletions
+    - insertDB.py: Insert databaseSummary.json into MongoDB database
+    - database.txt: Raw training data 
+    - databaseSummary.json: Structured and summarized training data
+  
+
 # Basic Workflow
 1. Process unstructured data into structured jsons using OpenAI's ChatCompletions and Structure Outputs 
     - Reasoning: Easier understanding of information for Assistants API when fed into assistant's instructions/contextual window
