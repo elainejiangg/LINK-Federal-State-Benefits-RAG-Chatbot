@@ -7,7 +7,7 @@ client = pymongo.MongoClient("mongodb+srv://healthier:iap2025@atlascluster.orvyc
 db = client.healthier
 collection = db.programs
 
-with open("database.json") as f:
+with open("databaseSummary.json") as f:
     data = json.load(f)
     
 # Extract the programs list and create separate documents for each program

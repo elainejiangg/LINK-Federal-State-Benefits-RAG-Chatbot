@@ -1,19 +1,3 @@
-// app.post("/api/chat", async (req, res) => {
-//   const { message } = req.body;
-
-//   try {
-//     const response = await openai.createChatCompletion({
-//       model: "gpt-3.5-turbo",
-//       messages: [{ role: "user", content: message }],
-//     });
-
-//     res.json({ reply: response.data.choices[0].message.content });
-//   } catch (error) {
-//     console.error(error);
-//     res.status(500).send("Error communicating with OpenAI");
-//   }
-// });
-
 import express from "express";
 import mongoose from "mongoose";
 import router from "./chat.js"; // Import the router
