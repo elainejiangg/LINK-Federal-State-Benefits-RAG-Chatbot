@@ -38,4 +38,4 @@ cd interface/server && npm install && npm start
 - Build adminstrator interface such that the team at Healthier Democracy, hospitals, and other organizations can simply upload benefit documents to the app, updating the chatbot's knowledge base.
 
 # Similar Past Projects
-- Amika at MIT Media Lab Fluid Interfaces: https://drive.google.com/file/d/1qPKe5Ok0HKYoR-RVM7ctCEQR-lKeflHB/view?usp=sharing Used OpenAI Assistants API to dynamically build profiles of user and their relationships through consistent conversation, storing information as structured data in MongoDB. Also manages email reminder notifications to help user keep in touch with loved ones.
+- Amika chatbot webapp at MIT Media Lab Fluid Interfaces: https://drive.google.com/file/d/1qPKe5Ok0HKYoR-RVM7ctCEQR-lKeflHB/view?usp=sharing Used OpenAI Assistants API to dynamically build profiles of user and their relationships through consistent conversation, extracting and converting information from conversations into structured data stored in MongoDB. Also, manages email reminder notifications to help user keep in touch with loved ones.
