@@ -3,15 +3,10 @@ from typing import List
 from openai import OpenAI
 import json
 
-OUTPUT_JSON_FILE_PATH = "database.json"
+OUTPUT_JSON_FILE_PATH = "databaseSummary.json"
 
 # Initialize OpenAI client
-client = OpenAI(api_key="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")
-
-# Define JSON schema using Pydantic
-# class Eligibility(BaseModel):
-#     description: str
-#     criteria: list[str] = Field(..., description="List of eligibility criteria.")
+client = OpenAI(api_key=)
 
 class Program(BaseModel):
     program_name: str = Field(..., description="Name of the program.")
@@ -40,19 +35,18 @@ messages = [
 "Convert the following text into structured JSON format. Simply categorize them into the different fields. Summarize information concisely. If information does not fall into any of the fields, place in the other field. Assume that information that appears after a heading field but before a different field belongs to the first field. You should information on each of the following: TAFDC, EITC, SNAP, Lifeline Program, WIC, Fuel Assistance or LIHEAP, School Breakfast/Lunch,Massachusetts Senior Nutrition Program,  MassHealth (Medicaid),ConnectorCare, Health Safety Net (HSN), Medicare, Prescription Advantage (PA), Child Care Financial Assistance (CCFA), Head Start, HomeBASE, RAFT, MRVP,   Emergency Assistance (EA), HomeBASE, Residential Assistance for Families in Transition (RAFT) , Unemployment & Career Centers Program Name: Massachusetts Rental Voucher Program (MRVP), Unemployment Insurance (UI), Worker’s Comp,  Veterans’ Services,EAEDC,SSI, SSDI, Social Security" )},
     {"role": "user", "content": data}
 ]
-
-# # Set up response with schema
+# Set up response with schema
 completion = client.beta.chat.completions.parse(
     model="gpt-4o-2024-08-06",
     messages=messages,
     response_format=Programs 
 )
 
-# # Extract and display parsed response
+#  Extract and display parsed response
 program_data = completion.choices[0].message.parsed
 
 # Save as JSON file
-with open('databaseSummary.json', "w") as json_file:
+with open(OUTPUT_FILE_PATH, "w") as json_file:
     json.dump(program_data.model_dump(), json_file, indent=4)
 
 
