@@ -28,6 +28,7 @@ cd interface/server && npm install && npm start
     - Use keyword and embeddings of those for alignments between benefit programs and user prompts
 - Better way of storing charts in MongoDB
 - Persevere specificity of data. Due to time constraints and time/cost issues with keeping such a large context window with the OpenAI Assistants API, when converting from unstructured to structured data, I specified for Chat Completions to summarize the data where it sees fit.
+- More concise, targeted, conversational responses. The Assistants API has a habit of outputting conversation in noncasual tones, often info-dumping the whatever was provided in its context window. This can be fixed with finetuning the prompting of the assistant's instructions.
 
 # Future Integrations
 - Languages (e.g., Spanish, Mandarin, etc.) using Google Cloud Translate API
