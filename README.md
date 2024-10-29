@@ -5,8 +5,17 @@
 [https://drive.google.com/file/d/1QNyNy5Gv36adVFl43B6VRF6AaTAyzRia/view?usp=sharing](https://drive.google.com/file/d/1d-yX5pxdd2J9w7l99BnciMejrOsnSyOB/view?usp=drive_link)
 
 # How to Run Locally
+
+1.
 ```
 git clone https://github.com/elainejiangg/healthier-demo.git
+
+```
+2. Fill in .env in interface/server (i.e., OpenAI key and MongoDB connection string)
+
+
+3.
+```
 cd interface/client && npm install && npm start
 cd interface/server && npm install && npm start
 ```
