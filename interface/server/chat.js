@@ -103,16 +103,5 @@ async function generateInstructionsWithContext(benefits_json) {
     }
   });
 })();
-// const instructions = generateInstructionsWithContext(benefits);
-// console.log(instructions);
-
-// const assistant = await openai.beta.assistants.create({
-//   name: "Link",
-//   instructions: instructions,
-//   tools: [{ type: "code_interpreter" }],
-//   model: "gpt-4o",
-// });
-
-// const thread = await openai.beta.threads.create();
 
 export default router;
