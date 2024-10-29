@@ -6,7 +6,7 @@ import json
 OUTPUT_JSON_FILE_PATH = "databaseSummary.json"
 
 # Initialize OpenAI client
-client = OpenAI(api_key=)
+client = OpenAI(api_key="")
 
 class Program(BaseModel):
     program_name: str = Field(..., description="Name of the program.")
