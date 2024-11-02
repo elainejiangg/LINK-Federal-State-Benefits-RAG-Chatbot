@@ -1,4 +1,4 @@
-# healthier-demo
+# Federal & State Benefits Chatbot
 ![Image](/Image.png)
 
 # Demo
