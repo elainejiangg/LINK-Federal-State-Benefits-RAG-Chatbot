@@ -54,5 +54,4 @@ cd interface/server && npm install && npm start
 - Languages (e.g., Spanish, Mandarin, etc.) using Google Cloud Translate API
 - Accessibility (e.g., speech-to-text, text-to-speech; screen-reader accessible)
 - Mobile app or SMS-based chatbot
-- Deploy app (I ran into issues with deployment. Hence, the vercel link does not actually work, unfortunately)
 - Build adminstrator interface such that the team at Healthier Democracy, hospitals, and other organizations can simply upload benefit documents to the app, updating the chatbot's knowledge base.
